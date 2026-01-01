@@ -1,0 +1,8 @@
+# Libs and modules
+node_modules
+
+# Build output
+dist
+
+# LLMs notes and stuff
+notes
