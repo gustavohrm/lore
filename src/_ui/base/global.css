@@ -1,14 +1,42 @@
 @layer base {
   html,
   body {
-    @apply flex flex-col min-h-screen overflow-x-hidden bg-background;
+    @apply flex min-h-screen overflow-x-hidden bg-background text-text;
   }
 
   button {
-    @apply not-disabled:cursor-pointer;
+    @apply disabled:cursor-not-allowed cursor-pointer;
   }
 
   img {
     @apply select-none;
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold tracking-normal;
+  }
+
+  h4 {
+    @apply text-xl font-medium tracking-normal;
+  }
+
+  h5 {
+    @apply text-lg font-medium tracking-wide;
+  }
+
+  h6 {
+    @apply text-base font-medium tracking-wide;
+  }
+
+  p {
+    @apply text-base font-normal tracking-wider;
   }
 }
